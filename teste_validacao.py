@@ -7,10 +7,8 @@ def test_email_correto_e_aceito():
 
 
 def test_email_sem_arroba_e_rejeitado():
-    resultado = email_valido("anasenac.br")
-    assert resultado is False
-
+    assert email_valido("anasenac.br") is False
 
 def test_email_vazio_e_rejeitado():
-    resultado = email_valido("")
-    assert resultado is False
+    assert email_valido("") is False
+
